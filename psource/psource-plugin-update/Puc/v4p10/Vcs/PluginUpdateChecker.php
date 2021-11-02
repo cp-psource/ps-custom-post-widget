@@ -95,7 +95,7 @@ if ( !class_exists('Puc_v4p10_Vcs_PluginUpdateChecker') ):
 			if ( empty($info->sections['changelog']) ) {
 				$info->sections['changelog'] = $api->getRemoteChangelog($ref, $this->package->getAbsoluteDirectoryPath());
 				if ( empty($info->sections['changelog']) ) {
-					$info->sections['changelog'] = __('Es ist kein Änderungsprotokoll verfügbar.', 'psource-plugin-updater');
+					$info->sections['changelog'] = __('Es ist kein Änderungsprotokoll verfügbar.', 'rcpt');
 				}
 			}
 
