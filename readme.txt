@@ -22,8 +22,8 @@ Zeige Deine neuesten Produkte, Kleinanzeigen oder andere benutzerdefinierte Beit
 [POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
 [Projektseite](https://n3rds.work/piestingtal_source/ps-custom-post-widget/)
-[Handbuch](https://n3rds.work/docs/standard-theme-plugin-handbuch/)
-[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/standard-theme-plugin/)
+[Handbuch](https://n3rds.work/docs/ps-custom-posts-type-widget-handbuch/)
+[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-custom-posts-type-widget-supportforum/)
 [GitHub](https://github.com/piestingtal-source/ps-custom-post-widget)
 
 == Mehr PSOURCE ==
