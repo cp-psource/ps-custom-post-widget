@@ -3,7 +3,7 @@
 Plugin Name: PS Custom Posts Type Widget
 Plugin URI: https://n3rds.work/piestingtal_source/ps-custom-post-widget/
 Description: Ermöglicht die Anzeige von benutzerdefinierten Beitragstypen und normalen Beiträgen mit Beitragsbildern und Auszügen als Widget.
-Version: 1.0.2
+Version: 1.0.3
 Author: WMS N@W
 Author URI: https://n3rds.work
 
