@@ -39,8 +39,8 @@ class RcptWidget extends WP_Widget {
 	var $_order_options = array();
 	var $_order_directions = array();
 
-	    function RcptWidget() {
-		//function __construct() {
+	    //function RcptWidget() {
+		function __construct() {
 		$this->_order_options    = array(
 			'none'     => __( 'Nichts', 'rcpt' ),
 			'rand'     => __( 'Zufällig', 'rcpt' ),
@@ -58,7 +58,8 @@ class RcptWidget extends WP_Widget {
 			'classname'   => 'widget_rcpt',
 			'description' => __( 'Ermöglicht die Anzeige von benutzerdefinierten Beitragstypen und normalen Beiträgen mit Beitragsbildern und Auszügen.', 'rcpt' )
 		);
-		$this->__construct(  'rcpt', 'Benutzerdefinierte Beiträge Widget', $widget_ops );
+		//$this->__construct(  'rcpt', 'Benutzerdefinierte Beiträge Widget', $widget_ops );
+		parent::__construct( 'RcptWidget', __( 'Benutzerdefinierte Beiträge Widget', 'rcpt' ), $widget_ops );
 	   
 	}
 
@@ -307,7 +308,7 @@ EORcptJs;
 			'post_type'        => $post_type,
 			'orderby'          => $order_by,
 			'order'            => $order_dir,
-			'caller_get_posts' => 1
+			'ignore_sticky_posts' => 1
 		);
 		if ( $post_author ) {
 			$query_args['author'] = $post_author;
