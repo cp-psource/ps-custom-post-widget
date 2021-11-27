@@ -49,4 +49,8 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 = 1.0.2 = DerN3rd =
 
+* Fix Deprecated .live -> Benutzerdefinierte Felder funktionieren wieder
+
+= 1.0.2 = DerN3rd =
+
 * Release 

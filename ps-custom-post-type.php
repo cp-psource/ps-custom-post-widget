@@ -74,8 +74,8 @@ class RcptWidget extends WP_Widget {
 		$order_dir      = esc_attr( $instance['order_dir'] );
 
 		// Fields
-		$show_title      = isset( $instance['show_title'] ) ? (int) $instance['show_title'] : true; // Show by default
-		$titles_as_links = isset( $instance['titles_as_links'] ) ? (int) $instance['titles_as_links'] : true; // True by default
+		$show_title      = !isset( $instance['show_title'] ) ? (int) $instance['show_title'] : true; // Show by default
+		$titles_as_links = !isset( $instance['titles_as_links'] ) ? (int) $instance['titles_as_links'] : true; // True by default
 		$show_body       = (int) $instance['show_body'];
 		$show_thumbs     = esc_attr( $instance['show_thumbs'] );
 		$show_dates      = esc_attr( $instance['show_dates'] );
@@ -128,7 +128,7 @@ class RcptWidget extends WP_Widget {
 		         '</p>';
 
 		$html .= '<p>';
-		$html .= '<label for="' . $this->get_field_id( 'class' ) . '">' . __( 'Zusätzliche CSS Klass(en) <small>(optional)</small>:', 'rcpt' ) . '</label>';
+		$html .= '<label for="' . $this->get_field_id( 'class' ) . '">' . __( 'Zusätzliche CSS Klasse(n) <small>(optional)</small>:', 'rcpt' ) . '</label>';
 		$html .= '<input type="text" name="' . $this->get_field_name( 'class' ) . '" id="' . $this->get_field_id( 'class' ) . '" class="widefat" value="' . $class . '"/>';
 		$html .= '<div><small>' . __( 'Ein oder mehrere durch Leerzeichen getrennte gültige CSS-Klassennamen, die auf die generierte Liste angewendet werden', 'rcpt' ) . '</small></div>';
 		$html .= '</p>';
@@ -210,7 +210,7 @@ class RcptWidget extends WP_Widget {
 		$html .= <<<EORcptJs
 <script type="text/javascript">
 (function ($) {
-$("#{$id}-handler").live("click", function () {
+$("#{$id}-handler").on("click", function () {
 	var el = $("#{$id}");
 	if (!el.length) return false;
 	if (el.is(":visible")) el.hide();
@@ -239,7 +239,7 @@ EORcptJs;
 	private function _get_post_authors() {
 		global $wpdb;
 		$authors = $wpdb->get_col( "SELECT DISTINCT post_author FROM {$wpdb->posts}" );
-		$info    = array( '' => __( 'Anyone', 'rcpt' ) );
+		$info    = array( '' => __( 'Jeder', 'rcpt' ) );
 		foreach ( $authors as $author ) {
 			$user            = new WP_User( $author );
 			$info[ $author ] = $user->display_name;
