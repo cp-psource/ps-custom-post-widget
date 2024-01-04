@@ -4,7 +4,7 @@ Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free
 Tags: widget, custom,post, wordpress, classicpress
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 1.0.3
+Stable tag: 1.04
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,8 +22,6 @@ Zeige Deine neuesten Produkte, Kleinanzeigen oder andere benutzerdefinierte Beit
 [POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
 [Projektseite](https://n3rds.work/piestingtal_source/ps-custom-post-widget/)
-[Handbuch](https://n3rds.work/docs/ps-custom-posts-type-widget-handbuch/)
-[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-custom-posts-type-widget-supportforum/)
 [GitHub](https://github.com/piestingtal-source/ps-custom-post-widget)
 
 == Mehr PSOURCE ==
@@ -47,10 +45,16 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 == ChangeLog ==
 
-= 1.0.2 = DerN3rd =
+= 1.0.4 =
+
+* Sicherheitslücken geschlossen
+* XSS Lücke geschlossen
+* PhP8 Upgrades
+
+= 1.0.3 =
 
 * Fix Deprecated .live -> Benutzerdefinierte Felder funktionieren wieder
 
-= 1.0.2 = DerN3rd =
+= 1.0.2 =
 
 * Release 

@@ -3,7 +3,7 @@
 Plugin Name: PS Custom Posts Type Widget
 Plugin URI: https://n3rds.work/piestingtal_source/ps-custom-post-widget/
 Description: Ermöglicht die Anzeige von benutzerdefinierten Beitragstypen und normalen Beiträgen mit Beitragsbildern und Auszügen als Widget.
-Version: 1.0.3
+Version: 1.04
 Author: WMS N@W
 Author URI: https://n3rds.work
 
@@ -24,15 +24,14 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 require 'psource/psource-plugin-update/psource-plugin-updater.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+use Psource\PluginUpdateChecker\v5\PucFactory;
+$MyUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=ps-custom-post-widget', 
 	__FILE__, 
 	'ps-custom-post-widget' 
 );
 
 ///////////////////////////////////////////////////////////////////////////
-
-
 
 class RcptWidget extends WP_Widget {
 
