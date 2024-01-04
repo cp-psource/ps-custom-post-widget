@@ -1,0 +1,254 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PS Custom Posts Type Widget\n"
+"POT-Creation-Date: 2024-01-04 17:06+0100\n"
+"PO-Revision-Date: 2024-01-04 17:07+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ps-custom-post-type.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: psource/psource-plugin-update/vendor\n"
+
+#: ps-custom-post-type.php:43
+#, fuzzy
+msgid "Nichts"
+msgstr "Nothing"
+
+#: ps-custom-post-type.php:44
+msgid "Zufällig"
+msgstr "Random"
+
+#: ps-custom-post-type.php:45
+#, fuzzy
+msgid "Nach ID"
+msgstr "According to ID"
+
+#: ps-custom-post-type.php:46
+#, fuzzy
+msgid "Nach Autor"
+msgstr "By author"
+
+#: ps-custom-post-type.php:47
+#, fuzzy
+msgid "Nach Titel"
+msgstr "By title"
+
+#: ps-custom-post-type.php:48
+#, fuzzy
+msgid "Veröffentlichung"
+msgstr "Publication"
+
+#: ps-custom-post-type.php:49
+#, fuzzy
+msgid "Zuletzt aktualisiert"
+msgstr "Last updated"
+
+#: ps-custom-post-type.php:52
+msgid "Aufsteigend"
+msgstr "Ascending"
+
+#: ps-custom-post-type.php:53
+msgid "Absteigend"
+msgstr "Descending"
+
+#: ps-custom-post-type.php:58
+#, fuzzy
+msgid "Benutzerdefinierte Beiträge Widget"
+msgstr "Custom posts widget"
+
+#: ps-custom-post-type.php:61
+#, fuzzy
+msgid ""
+"Ermöglicht die Anzeige von benutzerdefinierten Beitragstypen und normalen "
+"Beiträgen mit Beitragsbildern und Auszügen."
+msgstr ""
+"Enables the display of user-defined post types and normal posts with post "
+"images and excerpts."
+
+#: ps-custom-post-type.php:95
+msgid "Titel:"
+msgstr "Title:"
+
+#: ps-custom-post-type.php:100
+#, fuzzy
+msgid "Beitragstyp:"
+msgstr "Contribution type:"
+
+#: ps-custom-post-type.php:109
+#, fuzzy
+msgid "Verfasst von:"
+msgstr "Written by:"
+
+#: ps-custom-post-type.php:118
+#, fuzzy
+msgid "Limit:"
+msgstr "Limit:"
+
+#: ps-custom-post-type.php:128
+#, fuzzy
+msgid "Beschränke auf Beiträge mit Beitragsbildern"
+msgstr "Restrict to posts with post images"
+
+#: ps-custom-post-type.php:132
+#, fuzzy
+msgid "Zusätzliche CSS Klasse(n) <small>(optional)</small>:"
+msgstr "Additional CSS class(es) <small>(optional)</small>:"
+
+#: ps-custom-post-type.php:134
+#, fuzzy
+msgid ""
+"Ein oder mehrere durch Leerzeichen getrennte gültige CSS-Klassennamen, die "
+"auf die generierte Liste angewendet werden"
+msgstr ""
+"One or more valid CSS class names, separated by spaces, which are applied "
+"to the generated list"
+
+#: ps-custom-post-type.php:138
+msgid "Sortieren nach:"
+msgstr "Sort by:"
+
+#: ps-custom-post-type.php:147
+#, fuzzy
+msgid "Sortierreihenfolge:"
+msgstr "Sort order:"
+
+#: ps-custom-post-type.php:157
+#, fuzzy
+msgid "Titel zeigen"
+msgstr "Show title"
+
+#: ps-custom-post-type.php:162
+#, fuzzy
+msgid "Titel und Links zu Beiträgen"
+msgstr "Titles and links to articles"
+
+#: ps-custom-post-type.php:167
+#, fuzzy
+msgid "Auszüge zeigen"
+msgstr "Show excerpts"
+
+#: ps-custom-post-type.php:172
+#, fuzzy
+msgid "Veröffentlichungsdatum zeigen"
+msgstr "Show publication date"
+
+#: ps-custom-post-type.php:177
+#, fuzzy
+msgid "Beitragbilder zeigen <small>(falls verfügbar)</small>"
+msgstr "Show post pictures <small>(if available)</small>"
+
+#: ps-custom-post-type.php:182
+#, fuzzy
+msgid "Zeige/Verberge Benutzerdefinierte Felder"
+msgstr "Show/hide custom fields"
+
+#: ps-custom-post-type.php:184
+msgid "Benutzerdefinierte Felder"
+msgstr "Custom fields"
+
+#: ps-custom-post-type.php:199
+#, fuzzy, php-format
+msgid "Etikett für &quot;%s&quot;"
+msgstr "Label for &quot;%s&quot;"
+
+#: ps-custom-post-type.php:205
+#, fuzzy
+msgid ""
+"Felder ohne zugehörige Bezeichnung werden in der Widget-Ausgabe nicht "
+"angezeigt"
+msgstr ""
+"Fields without an associated label are not displayed in the widget output"
+
+#: ps-custom-post-type.php:208
+#, fuzzy
+msgid ""
+"Wähle einen Beitragstyp aus und speichere die Einstellungen, um sie zu "
+"aktualisieren"
+msgstr "Select a post type and save the settings to update them"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:56
+#, fuzzy
+msgid "View details"
+msgstr "View details"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:79
+#, fuzzy, php-format
+msgid "Weitere Informationen zu %s"
+msgstr "Further information on %s"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:130
+#, fuzzy
+msgid "Auf neuere Version prüfen"
+msgstr "Check for newer version"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:217
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid "Keine neuere Version von %s im PSOURCE REPO gefunden."
+msgstr "No newer version of %s found in PSOURCE REPO."
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:219
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid "Im PSOURCE REPO ist eine <b>neuere Version von %s</b> verfügbar!."
+msgstr "A <b>newer version of %s</b> is available in the PSOURCE REPO!"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:221
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid ""
+"Entschuldige, es konnte nicht festgestellt werden, ob Updates für %s "
+"verfügbar sind."
+msgstr ""
+"Sorry, it could not be determined whether updates are available for %s."
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:227
+#, fuzzy, php-format
+msgid "Unbekannter PSOURCE-UPDATTER-Status \"%s\""
+msgstr "Unknown PSOURCE-UPDATTER status \"%s\""
+
+#: psource/psource-plugin-update/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+#, fuzzy
+msgid "There is no changelog available."
+msgstr "There is no changelog available."
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "PS Custom Posts Type Widget"
+msgstr "PS Custom Posts Type Widget"
+
+#. Plugin URI of the plugin/theme
+#, fuzzy
+msgid "https://n3rds.work/piestingtal_source/ps-custom-post-widget/"
+msgstr "https://n3rds.work/piestingtal_source/ps-custom-post-widget/"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Ermöglicht die Anzeige von benutzerdefinierten Beitragstypen und normalen "
+"Beiträgen mit Beitragsbildern und Auszügen als Widget."
+msgstr ""
+"Enables the display of user-defined post types and normal posts with post "
+"images and excerpts as a widget."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "WMS N@W"
+msgstr "WMS N@W"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://n3rds.work"
+msgstr "https://n3rds.work"

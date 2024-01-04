@@ -1,0 +1,216 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PS Custom Posts Type Widget\n"
+"POT-Creation-Date: 2024-01-04 17:05+0100\n"
+"PO-Revision-Date: 2024-01-04 17:05+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ps-custom-post-type.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: psource/psource-plugin-update/vendor\n"
+
+#: ps-custom-post-type.php:43
+msgid "Nichts"
+msgstr ""
+
+#: ps-custom-post-type.php:44
+msgid "Zufällig"
+msgstr ""
+
+#: ps-custom-post-type.php:45
+msgid "Nach ID"
+msgstr ""
+
+#: ps-custom-post-type.php:46
+msgid "Nach Autor"
+msgstr ""
+
+#: ps-custom-post-type.php:47
+msgid "Nach Titel"
+msgstr ""
+
+#: ps-custom-post-type.php:48
+msgid "Veröffentlichung"
+msgstr ""
+
+#: ps-custom-post-type.php:49
+msgid "Zuletzt aktualisiert"
+msgstr ""
+
+#: ps-custom-post-type.php:52
+msgid "Aufsteigend"
+msgstr ""
+
+#: ps-custom-post-type.php:53
+msgid "Absteigend"
+msgstr ""
+
+#: ps-custom-post-type.php:58
+msgid "Benutzerdefinierte Beiträge Widget"
+msgstr ""
+
+#: ps-custom-post-type.php:61
+msgid ""
+"Ermöglicht die Anzeige von benutzerdefinierten Beitragstypen und normalen "
+"Beiträgen mit Beitragsbildern und Auszügen."
+msgstr ""
+
+#: ps-custom-post-type.php:95
+msgid "Titel:"
+msgstr ""
+
+#: ps-custom-post-type.php:100
+msgid "Beitragstyp:"
+msgstr ""
+
+#: ps-custom-post-type.php:109
+msgid "Verfasst von:"
+msgstr ""
+
+#: ps-custom-post-type.php:118
+msgid "Limit:"
+msgstr ""
+
+#: ps-custom-post-type.php:128
+msgid "Beschränke auf Beiträge mit Beitragsbildern"
+msgstr ""
+
+#: ps-custom-post-type.php:132
+msgid "Zusätzliche CSS Klasse(n) <small>(optional)</small>:"
+msgstr ""
+
+#: ps-custom-post-type.php:134
+msgid ""
+"Ein oder mehrere durch Leerzeichen getrennte gültige CSS-Klassennamen, die "
+"auf die generierte Liste angewendet werden"
+msgstr ""
+
+#: ps-custom-post-type.php:138
+msgid "Sortieren nach:"
+msgstr ""
+
+#: ps-custom-post-type.php:147
+msgid "Sortierreihenfolge:"
+msgstr ""
+
+#: ps-custom-post-type.php:157
+msgid "Titel zeigen"
+msgstr ""
+
+#: ps-custom-post-type.php:162
+msgid "Titel und Links zu Beiträgen"
+msgstr ""
+
+#: ps-custom-post-type.php:167
+msgid "Auszüge zeigen"
+msgstr ""
+
+#: ps-custom-post-type.php:172
+msgid "Veröffentlichungsdatum zeigen"
+msgstr ""
+
+#: ps-custom-post-type.php:177
+msgid "Beitragbilder zeigen <small>(falls verfügbar)</small>"
+msgstr ""
+
+#: ps-custom-post-type.php:182
+msgid "Zeige/Verberge Benutzerdefinierte Felder"
+msgstr ""
+
+#: ps-custom-post-type.php:184
+msgid "Benutzerdefinierte Felder"
+msgstr ""
+
+#: ps-custom-post-type.php:199
+#, php-format
+msgid "Etikett für &quot;%s&quot;"
+msgstr ""
+
+#: ps-custom-post-type.php:205
+msgid ""
+"Felder ohne zugehörige Bezeichnung werden in der Widget-Ausgabe nicht "
+"angezeigt"
+msgstr ""
+
+#: ps-custom-post-type.php:208
+msgid ""
+"Wähle einen Beitragstyp aus und speichere die Einstellungen, um sie zu "
+"aktualisieren"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:56
+msgid "View details"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:79
+#, php-format
+msgid "Weitere Informationen zu %s"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:130
+msgid "Auf neuere Version prüfen"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "Keine neuere Version von %s im PSOURCE REPO gefunden."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "Im PSOURCE REPO ist eine <b>neuere Version von %s</b> verfügbar!."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid ""
+"Entschuldige, es konnte nicht festgestellt werden, ob Updates für %s "
+"verfügbar sind."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:227
+#, php-format
+msgid "Unbekannter PSOURCE-UPDATTER-Status \"%s\""
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "PS Custom Posts Type Widget"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://n3rds.work/piestingtal_source/ps-custom-post-widget/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Ermöglicht die Anzeige von benutzerdefinierten Beitragstypen und normalen "
+"Beiträgen mit Beitragsbildern und Auszügen als Widget."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WMS N@W"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://n3rds.work"
+msgstr ""
