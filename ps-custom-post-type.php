@@ -73,16 +73,16 @@ class RcptWidget extends WP_Widget {
         $class          = isset( $instance['class'] ) ? esc_attr( $instance['class'] ) : '';
         $order_by       = isset( $instance['order_by'] ) ? esc_attr( $instance['order_by'] ) : '';
         $order_dir      = isset( $instance['order_dir'] ) ? esc_attr( $instance['order_dir'] ) : '';
-
-		// Fields
-		$show_title      = !isset( $instance['show_title'] ) ? (int) $instance['show_title'] : true; // Show by default
-		$titles_as_links = !isset( $instance['titles_as_links'] ) ? (int) $instance['titles_as_links'] : true; // True by default
-		$show_body       = (int) $instance['show_body'];
-		$show_thumbs     = esc_attr( $instance['show_thumbs'] );
-		$show_dates      = esc_attr( $instance['show_dates'] );
-
-		$fields = $instance['fields'];
-		$fields = $fields ? $fields : array();
+    
+        // Fields
+        $show_title      = isset( $instance['show_title'] ) ? (int) $instance['show_title'] : 1; // Show by default
+        $titles_as_links = isset( $instance['titles_as_links'] ) ? (int) $instance['titles_as_links'] : 1; // True by default
+        $show_body       = isset( $instance['show_body'] ) ? (int) $instance['show_body'] : 0;
+        $show_thumbs     = isset( $instance['show_thumbs'] ) ? esc_attr( $instance['show_thumbs'] ) : '';
+        $show_dates      = isset( $instance['show_dates'] ) ? esc_attr( $instance['show_dates'] ) : '';
+    
+        $fields = isset( $instance['fields'] ) ? $instance['fields'] : array();
+        $fields = $fields ? $fields : array();
 
 		// Set defaults
 		// ...
@@ -279,29 +279,28 @@ class RcptWidget extends WP_Widget {
 
 	public function widget( $args, $instance ) {
         extract( $args );
-        $title          = apply_filters( 'widget_title', sanitize_text_field( $instance['title'] ) );
-        $post_type      = sanitize_text_field( $instance['post_type'] );
-        $post_author    = absint( $instance['post_author'] );
-        $featured_image = $instance['featured_image'] ? true : false;
-        $limit          = absint( $instance['limit'] );
-        $class          = sanitize_text_field( $instance['class'] );
+    
+        $title          = isset( $instance['title'] ) ? apply_filters( 'widget_title', sanitize_text_field( $instance['title'] ) ) : '';
+        $post_type      = isset( $instance['post_type'] ) ? sanitize_text_field( $instance['post_type'] ) : '';
+        $post_author    = isset( $instance['post_author'] ) ? absint( $instance['post_author'] ) : 0;
+        $featured_image = isset( $instance['featured_image'] ) ? (bool) $instance['featured_image'] : false;
+        $limit          = isset( $instance['limit'] ) ? absint( $instance['limit'] ) : 0;
+        $class          = isset( $instance['class'] ) ? sanitize_text_field( $instance['class'] ) : '';
         $class          = $class ? " {$class}" : '';
-
-        $order_by  = sanitize_text_field( $instance['order_by'] );
-        $order_by  = array_key_exists( $order_by, $this->_order_options ) ? $order_by : 'none';
-        $order_dir = sanitize_text_field( $instance['order_dir'] );
-        $order_dir = array_key_exists( $order_dir, $this->_order_directions ) ? $order_dir : 'ASC';
-
+    
+        $order_by  = isset( $instance['order_by'] ) ? sanitize_text_field( $instance['order_by'] ) : 'none';
+        $order_dir = isset( $instance['order_dir'] ) ? sanitize_text_field( $instance['order_dir'] ) : 'ASC';
+    
         // Fields
-        $show_title      = ! empty( $instance['show_title'] ) ? true : false;
-        $titles_as_links = ! empty( $instance['titles_as_links'] ) ? true : false;
-        $show_body       = ! empty( $instance['show_body'] ) ? true : false;
-        $show_thumbs     = ! empty( $instance['show_thumbs'] ) ? true : false;
-        $show_dates      = ! empty( $instance['show_dates'] ) ? true : false;
-
-        $fields = $instance['fields'];
+        $show_title      = isset( $instance['show_title'] ) ? (bool) $instance['show_title'] : false;
+        $titles_as_links = isset( $instance['titles_as_links'] ) ? (bool) $instance['titles_as_links'] : false;
+        $show_body       = isset( $instance['show_body'] ) ? (bool) $instance['show_body'] : false;
+        $show_thumbs     = isset( $instance['show_thumbs'] ) ? (bool) $instance['show_thumbs'] : false;
+        $show_dates      = isset( $instance['show_dates'] ) ? (bool) $instance['show_dates'] : false;
+    
+        $fields = isset( $instance['fields'] ) ? $instance['fields'] : array();
         $fields = $fields ? $fields : array();
-
+    
         $query_args = array(
             'showposts'          => $limit,
             'nopaging'           => 0,
@@ -318,16 +317,16 @@ class RcptWidget extends WP_Widget {
             $query_args['meta_key'] = '_thumbnail_id';
         }
         $query = new WP_Query( $query_args );
-
+    
         if ( $query->have_posts() ) {
             echo $before_widget;
             if ( $title ) {
                 echo $before_title . esc_html( $title ) . $after_title;
             }
-
+    
             while ( $query->have_posts() ) {
                 $query->the_post();
-
+    
                 $item_title = get_the_title() ? esc_html( get_the_title() ) : get_the_ID();
                 $image      = $src = $width = $height = false;
                 if ( $show_thumbs ) {
@@ -341,19 +340,19 @@ class RcptWidget extends WP_Widget {
                         }
                     }
                 }
-
+    
                 $image_format = $image
                     ? '<span class="rcpt_item_image"><img src="%s" height="%d" width="%d" alt="%s" border="0" /></span>'
                     : '';
                 $image_str    = sprintf( $image_format, $src, $height, $width, esc_html( $item_title ) );
-
+    
                 $item_title_str       = $show_title
                     ? sprintf( '<span class="rcpt_item_title">%s %s</span>', $image_str, esc_html( $item_title ) )
                     : sprintf( '<span class="rcpt_item_title">%s</span>', $image_str );
                 $final_item_title_str = $titles_as_links
                     ? sprintf( '<a href="%s" title="%s">%s</a>', esc_url( get_permalink() ), esc_attr( $item_title ), $item_title_str )
                     : $item_title_str;
-
+    
                 $post_fields  = get_post_custom( get_the_ID() );
                 $shown_fields = array();
                 foreach ( $post_fields as $field => $value ) {
@@ -369,9 +368,9 @@ class RcptWidget extends WP_Widget {
                         'value' => wp_strip_all_tags( $value ),
                     );
                 }
-
+    
                 echo '<div class="rcpt_items"><ul class="rcpt_items_list' . esc_attr( $class ) . '">';
-
+    
                 echo '<li>';
                 echo $final_item_title_str;
                 if ( $show_body ) {
@@ -388,13 +387,13 @@ class RcptWidget extends WP_Widget {
                     echo '</dl>';
                 }
                 echo '</li>';
-
+    
                 echo '</ul></div>';
             }
             echo $after_widget;
             wp_reset_postdata();
         }
-    }
+    }    
 }
 
 load_plugin_textdomain( 'rcpt', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
